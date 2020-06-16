@@ -1,0 +1,38 @@
+*{font-family: "Tahoma";
+}
+
+header{border: 1px solid blue;
+       background-color: lightgray;}
+
+.top{text-align: center;
+	font-size: 35px;
+	font-family: "Tahoma";
+	
+	font-weight: bold;
+
+}
+#profile:hover{position: relative;
+         width: 70%;
+         transition: 1;
+         background-color: lightgreen;
+}
+#profile{width: 70%}
+
+#ProfessionalExp{position: relative; 
+	          width: 70%
+	      }
+
+#skills { float: right;
+position: relative;
+bottom: 500px;
+width: 30%}
+
+#contact {float: right;
+	      position: relative;
+	      bottom: 120px }
+#profilepic{position: relative;
+            bottom: 100px;
+            float: left; width: 120px; height: 120px;
+            border-radius: 30px
+          }
+
