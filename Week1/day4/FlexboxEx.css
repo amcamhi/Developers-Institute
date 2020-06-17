@@ -1,0 +1,108 @@
+#container{display: flex;
+		   flex-direction: column;
+		   align-items: : center;
+		   justify-content: center;
+		   border: 1px solid red;
+		   }
+
+.top{background-color: lightblue;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+margin: 10px;}
+
+.mid{display: flex;
+justify-content: center;
+align-items: center;
+background-color: lightblue;
+margin: 10px 100px;
+padding:60px;}
+
+.bot{display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+margin: 10px;
+background-color: lightblue;
+}
+/*EXCERCISE 2 */
+
+#container2{display: flex;
+flex-direction: column;
+border: 1px solid red;
+}
+
+.top1{background-color: lightblue;
+display: flex;
+justify-content: center;
+align-items:  center;
+padding: 30px;
+margin:10px;}
+
+.mid2{display:flex;
+justify-content: flex-end;
+align-items: center;
+padding: 30px 30px 30px 0px;
+margin-left: 80%;
+margin-right: 10px;
+background-color: lightblue;}
+
+.bot2{background-color: lightblue;
+display: flex;
+justify-content: flex-end;
+align-items:  flex-end;
+padding: 30px;
+margin:10px;}
+
+/*Excercise 3 */
+#container3{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	border: 1px solid red;
+	padding: 10px
+}
+
+.logo{background-color: orchid;
+	padding:30px;}
+.team{background-color: lightblue;
+padding: 30px;
+width:500px}
+
+.products{background-color: salmon;
+	padding:30px;
+	width:500px;
+}
+/*Excercise 4 */
+
+#container4{border: 1px solid red;
+display: flex;
+flex-direction: column;}
+
+.n1{display: flex;
+justify-content: center;
+align-items: center;
+background-color: lightblue;
+margin-right: 200px;
+margin-left:200px;
+padding: 30px}
+
+.n2{display: flex;
+align-items: center;
+justify-content:center;
+background-color: lightblue;
+padding: 30px;
+margin: 5px 0px;
+}
+
+.n3{display: flex;
+justify-content: center;
+align-items: flex-end;
+background-color: lightblue;
+margin-right: 200px;
+margin-left:200px;
+padding: 30px}}
+
