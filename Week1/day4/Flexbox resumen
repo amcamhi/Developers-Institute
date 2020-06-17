@@ -1,0 +1,13 @@
+Flexbox.
+
+Define display: flex on the wrapping div.
+Allows control of items inside
+
+Justify-contet:main-axis
+Align-items:cross-axis.
+
+Default direction is row. Column will swap axis.
+
+Wrap, nowrap, reverse
+
+Control individual items:align-self

@@ -1,0 +1,18 @@
+.square {
+		height:100px;
+		width: 100px;
+		background-color: dodgerblue;
+		margin: 5px
+		color:black;
+		font-size: 40px}
+
+#wrapper {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		}
+body {
+		height: 100vh;
+	}

@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  height: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  
+}
+.item {
+  width: 50%;
+  height: 50%;
+  border: 2px dashed rgba(236, 198, 48, 0.5);
+}

@@ -1,0 +1,27 @@
+.left{
+	border: 1px solid lightgray;
+	background-color: lightgray;
+	height: 220px;
+	}
+
+.container{
+	margin: 10px;
+	}
+
+.mb-0{text-align: justify;
+ 	}
+
+ .btn{
+ 	background-color: blue;
+ 	color: white;
+ }
+
+ .pic {
+ 	display: flex;
+ 	flex-direction: row;}
+ 
+ .veg{
+ 	height: 100px;
+ 	width: 100px;
+ 	margin: 10px
+ }
