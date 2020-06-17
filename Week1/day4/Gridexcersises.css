@@ -1,0 +1,93 @@
+#container{
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-gap: 20px;
+		border: 1px solid black;
+		padding: 5px;
+		}
+
+#container div{
+		border: 1px solid black;
+		}
+.bottom{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: gold;}
+
+.leftred {background-color: salmon;
+	}
+.rightblue{background-color: lightblue;}
+
+/*HERE STARTS EXCERSISE 2*/
+#container2{
+	display: grid;
+	border: 1px solid black;
+	grid-template-columns:;
+	grid-gap:5px;
+	margin: 50px
+}
+
+.header{grid-column: 1/12;
+		background-color: lightblue;
+		}
+.hero{grid-column: 1/4;
+	  grid-row: 2/7;
+	  background-color: purple;
+	}
+
+.main{
+background-color: gold;
+	grid-column: 4/12;
+	grid-row: 2/13
+}
+.sidebar{
+		grid-column: 1/4;
+	    grid-row: 7/17;
+	    background-color: lightgreen;
+}
+.extra{ grid-column: 4/12;
+		grid-row: 13/17;
+		background-color: gray;
+	}
+.relatedi{background-color: teal;
+		 grid-column: 1/8;
+		 grid-row: 17/20;}
+.relatedp{background-color: pink;
+		grid-column: 8/12;
+		grid-row: 17/20;}
+.footer{background-color: orange;
+		grid-column: 1/12;
+		grid-row: 20/22;}
+
+/*Excercise 3 */
+
+#container3{display: grid;
+	grid-gap: 10px;
+			grid-template-areas: 
+			"n1 n1 n1"
+			"n2 n3 n4"
+			"n2 n5 n5"
+			"n6 n6 n7"
+			"n8 n8 n8";}
+
+	.n1{grid-area: n1;
+		background-color: orchid;}
+	.n2{grid-area: n2;
+		background-color: slateblue;}
+	.n3{grid-area: n3;
+		background-color: cornflowerblue;}
+	.n4{grid-area: n4;
+		background-color: powderblue;
+	}
+	.n5{grid-area: n5;
+		background-color: plum;
+	}
+	.n6{grid-area: n6;
+		background-color: orchid;}
+	.n7{grid-area: n7;
+		background-color: slateblue;
+	}
+	.n8{grid-area: n8; 
+		background-color: slateblue;}
+
+
