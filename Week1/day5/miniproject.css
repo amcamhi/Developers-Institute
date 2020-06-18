@@ -1,0 +1,28 @@
+#container{display: inline-flex;
+		  flex-wrap: wrap;
+		  align-items:  center;
+		  justify-content: space-around;
+		  text-align: justify;
+		  padding-right: 50px;
+		  padding-left: 50px;
+		}
+		
+
+.col1{width: 30.33%
+	}
+.col2{width: 30.33%
+	}
+.col3{width: 30.33%
+}
+
+.btn-light{border: 1px solid gray}
+
+#Login{display: flex;
+	  justify-content: flex-end;}
+
+.display-4{font-weight: bold;}
+
+.jumbotron{padding-left: 80px;}
+
+.navbar{margin: 0;
+background-color: black;}
