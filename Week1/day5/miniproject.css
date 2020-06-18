@@ -25,4 +25,6 @@
 .jumbotron{padding-left: 80px;}
 
 .navbar{margin: 0;
-background-color: black;}
+background-color: black;
+position: fixed;
+width: 100%}
