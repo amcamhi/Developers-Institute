@@ -1,0 +1,46 @@
+body{height: 100vh;
+	width: auto;
+	
+}
+#content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.texto{
+	width: 30%;
+	background-color: hsl(0, 0%, 80%)
+}
+
+#buttons{
+	display: inline-flex;
+}
+
+#boton2{
+	background-color: hsl(0, 0%, 80%)
+}
+
+section{
+	height: 50vh;
+	background-image: url(https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-attachment: fixed;
+	background-position: center;
+}
+.mitadabajo{
+	height: 50vh;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding:80px;
+
+}
+
+
+#navegacion{
+	display: inline-flex;
+	justify-content: center;
+}
