@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Guitar Scales Library</title>
+ <link rel="stylesheet" href="hackaton.css">
+ 
+</head>
+<body>
+  <div id="parent">
+    <div class="header">
+      <div id="titulo">
+      <h1>Guitar Scales Library</h1>
+      </div>
+    </div>
+    <div id="contenido">
+      <div id="contenedor_selecciones">
+          <label>Select Key</label>
+          <select name="keys" id="keys" onchange="changeImg()">
+            <option value="A" id="A" selected>A</option>
+            <option value="B" id="B">B</option>
+            <option value="C" id="C">C</option>
+            <option value="D" id="D">D</option>
+            <option value="E" id="E">E</option>
+            <option value="F" id="F">F</option>
+            <option value="G" id="G">G</option>
+          </select>
+          <label>Select Scale</label>
+          <select name="scales" id="scales" onchange="changeImg()">
+            <option value="minorPentatonic" id="minorPentatonic" selected>Minor Pentatonic</option>
+            <option value="Major" id="major">Major</option>
+            <option value="Minor" id="minor">Minor</option>
+          </select>
+        </div>
+        <div id = "imgContainer">
+          <img id = "img" src="ESCALAS/AMinorPentatonic.png">
+      </div>
+      <!-- METRONOMO METRONOMO METRONOMO METRONOMO METRONOMO METRONOMO -->
+      <div class="container">
+        <header>Simple<b style="color: #FFF;">Metronome</b></header>
+      
+        <section class="metronome-container">
+          <div class="counter"></div>
+          
+          <i class="fa fa-cog options-btn"></i>
+      
+          <div class="controls">
+            <label>BPM: <span>
+                          <i class="fa fa-minus bpm-minus"></i>
+                          <input type="text" value="60" class="bpm-input" />
+                          <i class="fa fa-plus bpm-plus"></i>
+                        </span>
+            </label>
+            <label>
+              Beat: <input type="text" value="4" class="ts-top" /></label>
+            <div style="margin-bottom: 15px;">
+              <input type="checkbox" id="timer-check" />
+              <label for="timer-check"></label>
+              
+              Timer: <input type="text" value="60" class="timer" />
+            </div>
+      
+            <button class="tap-btn">Tap</button>
+            <button class="play-btn">Play</button>
+          </div>
+          
+          <div class="options">
+            <i class="fa fa-caret-down up"></i>
+            <label>Off Beat Pitch: <input type="range" min="0" max="500" value="200" class="beat-range" /></label>
+            <label>Accent Pitch: <input type="range" min="0" max="500" value="380" class="accent-range" /></label>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <ul>
+          <li>Click circles to make an accent on that beat</li>
+          <li>Best viewed in <b>Google Chrome</b></li>
+          <li>Use options to change pitches of beats.</li>
+        </ul>
+      </footer>
+    </div>
+ </div>
+
+</div>
+ <script src="hackaton.js"></script>
+</body>
+</html>
