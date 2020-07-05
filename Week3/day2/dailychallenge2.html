@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun" value="write a noun"></li>
+      <li>Adjective: <input type="text" id="adjective" value="write an adjective"></li>
+      <li>Someone's Name: <input type="text" id="person" value="write someone´s name"></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+        let libButton = document.getElementById('lib-button');
+        let libIt = function() {
+            let storyDiv = document.getElementById("story");
+            let noun = document.getElementById("noun").value;
+            let adjective = document.getElementById("adjective").value;
+            let name = document.getElementById("person").value;
+            storyDiv.innerHTML = name+" era su nombre, le gustaba comer "+noun+", era un personaje muy "+adjective;
+        };
+        libButton.addEventListener('click', libIt);
+    </script>
+
+<script src="dailychallenge2.js"></script>
+ </body>
+</html>

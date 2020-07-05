@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyChallenge day3 w3</title>
+</head>
+<body>
+  <h3>Write Something Below</h3>
+  <input type="text" id="input" value ="write here...">
+
+
+  <script>
+let input1 = document.getElementById("input");
+input1.addEventListener("keypress", onlyLetters)
+
+let text = input1.value
+
+function onlyLetters(){
+
+let noLetters = text.replace(["^a-zA-Z"], "");
+
+return noLetters
+}
+  </script>
+</body>
+</html>

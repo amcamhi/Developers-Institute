@@ -136,40 +136,40 @@
 
 
 // //Excercise 5
-// function hotel_cost(){
-//   let nights =  prompt ("how many nights would you like to stay?");
-//    let hotelCost= Number(nights)*140;
-//    return hotelCost;
-// }
-// let hotelCost = hotel_cost();
+function hotel_cost(){
+  let nights =  prompt ("how many nights would you like to stay?");
+  hotelCost =  Number(nights)*140;
+  return hotelCost;
+}
+
+function planeRideCost (){
+  let destination =  prompt ("what is your destination?");
+  if( destination == "London"){ rideCost =183;
+  }else if(destination == "Paris"){rideCost =220;
+  }else{rideCost = 300 ;
+        }
+        return rideCost;
+}
 
 
-// function planeRideCost (){
-//   let destination =  prompt ("what is your destination?");
-//   if( destination == "London"){ rideCost =183;
-//   }else if(destination == "Paris"){rideCost =220;
-//   }else{rideCost = 300 ;
-//         }
-//         return rideCost;
-// }
-// let rideCost = planeRideCost();
-
-// function rentalCarCost(){
-//     let days = Number(prompt("For how many days would you like to rent the car?"));
-//     if(days>10){ carCost = 0.95*days*40
+function rentalCarCost(){
+    let days = Number(prompt("For how many days would you like to rent the car?"));
+    if(days>10){ carCost = 0.95*days*40
        
-//     }else{carCost =  days*40;
-// }   return carCost;}
-
-// let carCost = rentalCarCost();
-
-// function totalVacationCost(){
+    }else{carCost =  days*40}
     
-//     let vacationCost = hotelCost+rideCost+carCost;
-//     return vacationCost;
-// }
-// let vacationCost = totalVacationCost()
+    return carCost;}
 
+
+
+function totalVacationCost(){
+  let hc = hotel_cost()
+  let pr = planeRideCost()
+  let cc = rentalCarCost()
+    return hc + pr + cc
+}
+
+let total = totalVacationCost()
 
 // EXCERCISES XP NINJA
 

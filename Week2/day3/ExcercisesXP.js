@@ -153,20 +153,20 @@
 // ==========================================
 // XP NINJA
 // 1.
-let numbers = ["323", "500", "155", "432", "330"]
+// let numbers = ["323", "500", "155", "432", "330"]
 
 
-function splitToDigit(n){
-    return (n + '').split('').map((i) => { return Number(i); })
-  }
+// function splitToDigit(n){
+//     return (n + '').split('').map((i) => { return Number(i); })
+//   }
   
- function divBy3(n){
-     let sumOfDigits = 0
-     for (i=0;i<splitToDigit(n).length;i++){
-        sumOfDigits += splitToDigit(n)[i]
-     } if(sumOfDigits % 3 == 0){
-         console.log(true)
-     } else( console.log(false)) 
- }
+//  function divBy3(n){
+//      let sumOfDigits = 0
+//      for (i=0;i<splitToDigit(n).length;i++){
+//         sumOfDigits += splitToDigit(n)[i]
+//      } if(sumOfDigits % 3 == 0){
+//          console.log(true)
+//      } else( console.log(false)) 
+//  }
 
- console.log(divBy3(3000003))
+//  console.log(divBy3(3000003))
