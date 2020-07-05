@@ -1,42 +1,52 @@
-    <!DOCTYPE html>
-    <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-        charset="utf-8"></script>
-    </head>
-    <body>
-    <div id= "container">
-        <div id = "display">
-            <p id="display_number">0</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id ="container">
+            <form name="form">
+                <input type="text" name="display" id="display">
+            </form>
+            <table>
+                <tr> 
+                    <td><input class="button" type="button" value="AC" onclick="allClear();"></td>
+                    <td><input class="button" type="button" value="C" onclick="allClear();"></td>
+                    <td><input class="button" type="button" value="/" onclick="my_function('/');"></td>
+                    <td><input class="button" type="button" value="x" onclick="my_function('*');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="my_function(7);"></td>
+                    <td><input class="button" type="button" value="8" onclick="my_function(8);"></td>
+                    <td><input class="button" type="button" value="9" onclick="my_function(9);"></td>
+                    <td><input class="button" type="button" value="-" onclick="my_function('-');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="my_function(4);"></td>
+                    <td><input class="button" type="button" value="5" onclick="my_function(5);"></td>
+                    <td><input class="button" type="button" value="6" onclick="my_function(6);"></td>
+                    <td><input class="button" type="button" value="+" onclick="my_function('+');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="my_function(1);"></td>
+                    <td><input class="button" type="button" value="2" onclick="my_function(2);"></td>
+                    <td><input class="button" type="button" value="3" onclick="my_function(3);"></td>
+                    <td><input class="button" type="button" value="=" onclick="equal()"></td>        
+                </tr>    
+            </table>
+            <table>
+                <tr>
+                    <td><input class="button0" type="button" value="0" onclick="my_function(0);"></td>
+                    <td><input class="buttonDot" type="button" value="." onclick="my_function('.');"></td>
+                </tr>
+            </table>
         </div>
-        <br>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(0);">0</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(1);">1</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(2);">2</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(3);">3</button>
-        <br>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(4);">4</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(5);">5</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(6);">6</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(7);">7</button>
-
-        <br>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(8);">8</button>
-        <button class = "number" type="button" name="button" onclick="javascript:my_f(9);">9</button>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('.')">.</button>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('+');">+</button>
-        <br>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('-');">-</button>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('*');">*</button>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('/');">/</button>
-        <button class = "symbol" type="button" name="button" onclick="javascript:my_f('=');">=</button>
-        <br>
-        <button type="button" class="reset_clear" name="button" onclick="javascript:reset();">Reset</button>
-        <button type="button" class="reset_clear" name="button" onclick="javascript:clear();">Clear</button>
+    
     </div>
-
-        <script src="miniproject.js"></script>
-    </body>
-    </html>
+    <script src="miniproject.js"></script>
+</body>
+</html>

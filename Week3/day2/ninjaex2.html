@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Email Validation Excercise</h1>
+   <form name="myform"   onsubmit="return validateemail();">  
+    Email: <input type="text" name="email"><br/>  
+      
+    <input type="submit" value="register">  
+    </form>  
+
+<script src="ninjaex2.js"></script>
+</body>
+</html> -->
+<!-- EXCERCISE 3 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="parrafo"></p>
+
+<script>
+var x = document.getElementById("parrafo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>

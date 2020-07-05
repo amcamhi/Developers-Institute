@@ -1,47 +1,48 @@
-button {
-    width:70px;
-    height:70px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#container {
+.button {
+    width:10.5vh;
+    height:10vh;
+    font-size: x-large;
+    margin: 2; 
+    background-color:green   
+}
+
+.button0 {
+    height: 10vh;
+    width: 30vh;
+    font-size: x-large;
+    margin: 2;
+}
+
+.buttonDot {
+    height: 10vh;
+    width: 12.5vh;
+    font-size: x-large;
+    margin: 2; 
+}
+
+#display {
+    height: 6vh;
+    width: 38vh;
+    margin: 2px;
+    font-size: 4vh;  
+    padding: 15px;
+    background-color: darkkhaki;
+}
+
+.main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 5px;
-    background-color: gold;
-    width: auto;
-    height: auto;
-    width: 21%
-    }
-#display, #display1 {
-    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    width: 99%;
-    height: 80px;
-    background-color: ivory;
-    border: solid black 3px;
-    margin: 3px;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: lightslategray;
 }
-#display_number{
-    font-size: 3em;
+#container{
+    background-color: black;
 }
-.number{
-    flex-grow: 1;
-    background-color: palegreen;
-}
-
-#bottom{
-   display: inline;
-   
-}
-.symbol{
-    flex-grow: 1;
-    background-color: orange;
-}
-.reset_clear{
-    flex-grow: 1;
-    background-color: orangered;
-}
-
