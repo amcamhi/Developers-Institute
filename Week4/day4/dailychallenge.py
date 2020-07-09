@@ -1,6 +1,6 @@
 
 matrix = [
-    ["7", " ", "3"],
+    [7, " ", 3],
     ["T", "s", "i"],
     ["h", "%", "x"],
     ["i", " ", "#"],
@@ -29,4 +29,4 @@ for col in range(3):
         else:
             invalid_char_count += 1
 
-    print(text)
+print(text)
