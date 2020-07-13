@@ -8,15 +8,15 @@
 #     else:
 #         print(i)
 
-   #Excercise 1
+# Excercise 1
 
 # print("Hello world\n"*4)
 
-#Excercise 2
+# Excercise 2
 
 # print((99**3)*8)
 
-#Excercise 3
+# Excercise 3
 
 # name = "Andres"
 # age = "27"
@@ -44,7 +44,7 @@
 # else:
 #     print("enjoy your ride!")
 
-#Excercise 7
+# Excercise 7
 
 # number = int(input("write a number: "))
 # if number %2 == 0:
@@ -56,7 +56,7 @@
 
 # print("Hello World\n"*4, "I love python\n"*4)
 
-# Excercise 4 GOLD 
+# Excercise 4 GOLD
 # number = input("write a number")
 # result = (int(number)+int(number*2)+int(number*3)+int(number*4))
 # print(result)
