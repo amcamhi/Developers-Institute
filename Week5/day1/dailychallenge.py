@@ -1,37 +1,43 @@
-class Farm():
-    animals_added = 0
+import inflect
 
-    def __init__(self, farmName):
-        self.FarmName = farmName
+p = inflect.engine()
+
+
+class Farm:
+    def __init__(self, name):
+        self.name = name
         self.animals = {}
 
-    def add_animal(self, animal_name, quantity):
-        animal_to_add = {animal_name: quantity}
-        self.animals.update(animal_to_add)
+    def add_animal(self, animal, number=1):
+        if animal in self.animals.keys():
+            self.animals[animal] += number
+        else:
+            self.animals[animal] = number
 
     def get_info(self):
-        print(f"{self.FarmName} farm")
-        for animal in self.animals:
-            print(f"{animal}\t : {self.animals[animal]}")
+        output = f"{self.name}'s Farm\n"
+        for animal, amount in self.animals.items():
+            if amount > 1:
+                animal = p.plural(animal)
+            space = " " * (10 - len(animal))
+            output += f"{animal} {space} :{amount}\n"
+        output += "    E-I-E-I-O    "
+        return output
 
     def get_animal_types(self):
-        animalTypes = []
-        for animal in self.animals:
-            animalTypes.append(animal)
-            animalTypes.sort()
-        return animalTypes
+        return sorted(list(self.animals.keys()))
 
     def get_short_info(self):
-        animals = self.get_animal_types()
-        animals = " ".join(animals)
-        print(str(self.FarmName)+" has " + animals)
+        animals = ", ".join(self.get_animal_types())
+        return f"{self.name}'s farm has {animals}."
 
 
-mcdonalds = Farm("McDonalds")
-mcdonalds.add_animal("Sheep", 4)
-mcdonalds.add_animal("Cow", 2)
-mcdonalds.add_animal("Goat", 3)
-
-mcdonalds.get_info()
-mcdonalds.get_animal_types()
-mcdonalds.get_short_info()
+farm = Farm("McDonald")
+print(farm.animals)
+farm.add_animal("cow", 5)
+farm.add_animal("sheep")
+farm.add_animal("goat", 4)
+print(farm.animals)
+print(farm.get_info())
+print(farm.get_animal_types())
+print(farm.get_short_info())
