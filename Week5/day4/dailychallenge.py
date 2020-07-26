@@ -1,6 +1,6 @@
 from collections import Counter
 from string import punctuation
-import nltk
+import nltk.corpus
 
 
 class Text():
@@ -37,5 +37,6 @@ class TextModification(Text):
     def de_punc(self):
         return "".join([word for word in self.text if punctuation.count(word) == 0])
 
-    def de_stopwords(self):
-        return " ".join([word for word in self.text.split(" ") if stopwords.words('english').count(word) == 0])
+    # def de_stopwords(self):
+    #     return " ".join([word for word in self.text.split(" ") if stopwords.words('english').count(word) == 0])
+    # this isnt working, will ask for help with this one.
