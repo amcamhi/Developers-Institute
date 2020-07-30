@@ -26,4 +26,5 @@ SELECT * from student WHERE birth_date >= '1/01/2000'
 <!-- XP NINJA -->
 
 SELECT * from student ORDER by last_name ASC limit 4 
+SELECT first_name, last_name 
 select * from student limit 3 offset 2
