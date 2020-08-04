@@ -123,10 +123,32 @@ CREATE TABLE employees (employee_id SERIAL PRIMARY KEY,
 
 RESTRICTING and SORTING
 
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary BETWEEN 10000 and 15000
 
+SELECT first_name, last_name, department_id
+FROM employees
+WHERE department_id = 30 OR department_id = 100
+ORDER BY department_id ASC
+
+SELECT first_name, last_name, department_id, salary
+FROM employees
+WHERE (department_id = 3 OR department_id = 10) AND salary NOT BETWEEN 10000 and 15000
+ORDER BY department_id ASC
                        
+select first_name,last_name, hire_date from employees
+WHERE extract(year from hire_date) = 1987
 
+select first_name from employees
+WHERE first_name LIKE '%c%' OR first_name lIKE '%e%'
 
+select * from jobs
+
+select first_name, last_name, salary, sum(salary*0.15) as PF from employees group by employee_id 
+
+select * from employees
+WHERE last_name in('Jones','Blake','Scott','King','Ford')
 
 
 

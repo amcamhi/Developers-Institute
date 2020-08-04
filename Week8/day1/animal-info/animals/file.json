@@ -1,0 +1,49 @@
+import json
+
+animals_string = '''
+{
+    "animals": [{
+        "id": "1",
+        "legs": "4",
+        "weight": "20",
+        "height": "100",
+        "speed": "30",
+        "family": "1"
+    },
+        {"id": "2",
+        "legs": "0",
+        "weight": "5",
+        "height": "200",
+        "speed": "25",
+        "family": "2"
+
+    }
+    ]
+}'''
+
+family_string = ''' {
+    "family": [{
+        "id": "1",
+        "name": "mammal"
+    },
+        {
+        "id": "2",
+        "name": "reptile"
+    },
+        {
+        "id": "3",
+        "name": "insect"
+    },
+        {
+        "id": "4",
+        "name": "arachnid"
+    },
+        {
+        "id": "5",
+        "name": "amphibian"
+    }
+    ]
+}
+'''
+animal = json.loads(animals_string)
+family = json.loads(family_string)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        {% block title %}
+        {{ page_title|default:"Personal Info" }}
+        {% endblock title %}
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    {% block content %}
+    <ul>
+        {% for k, v in person.items %}
+        <li>{{ k | capfirst}}: {{ v }}</li>
+        {% endfor %}
+    </ul>
+
+    {% endblock content %}
+</body>
+
+</html>
